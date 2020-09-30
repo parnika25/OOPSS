@@ -1,0 +1,11 @@
+WAP to find area of a circle, a rectangle and a triangle, using concept of function overloading.
+WAP to find volume of a sphere, a cylinder and a cuboid, using function overloading.
+WAP which displays a given character, n number of times, using a function. When the n value is not provided, it should print the given character 80 times. When both the character and n value is not provided, it should print ‘*’ character 80 times. [Write the above program in two ways:--using function overloading.-using default arguments.]
+WAP to find square and cube of a number using inline function.
+WAP to increment the value of an argument given to function USING INLINE function
+Write a program to create a class called COMPLEX and implement the following overloading functions ADD that return a COMPLEX number.
+   a) ADD (a , s2) - where a is an integer (real part) and s2 is a complex number.
+   b) ADD (s1, s2) - where s1 and s2 are complex numbers.
+Write a program to find the summation of three numbers by using one function only with function name SUM having three arguments. If at run time one argumnet is given to the function SUM, then second and third argument will be assumed by default as 10 and 20 respectively. If two argumnets are given at run time, then thrird argument will be assumed as 20. Use function with default argument concepts.
+Write a program to demonstrate the concept of call-by-value, call-by-reference & call-byaddress by taking swapping of two numbers as an example. 
+Write a program to demonstrate the use of scope resolution operator(::) by declaring same varibale name globally and locally and display the value of gloabl and local variables. 
