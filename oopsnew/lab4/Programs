@@ -1,0 +1,7 @@
+WAP to swap private data member of two classes. [The classes have no relation with each other].
+Create two classes which stores distance in feet, inches and meter, centimeter format respectively. Write a function which compares distance in object of these classes and displays the larger one.
+Create a class with an integer data member. Include functions for input and output in class. Count the number of times each function is called and display it.
+Create a class which stores name, roll number and total marks for a student. Input data for n students. Find the average marks scored by n students, store it as a data member of the class and display it using a function which may be called without object.
+Create a class which stores name, author and price of a book. Store information for n number of books. Display information of all the books in a given price range using friend function in a tabular format.
+Write a program to find out the greatest between two numbers defined in two different classes by using friend function.
+Create two classes DM and DB which store the value of distances. DM stores distances in meters and centimeters and DB in feet and inches. Write a program that can read values for the class objects and add one object of Dm with another object of DB. Use friend function to carry out the operation. The object that stores the results may be a DM object or DB object, depending on the units in which the results are required. The display should in the format of feet and inches or meters and centimeters depending on the object on display.
