@@ -14,9 +14,9 @@ int stock;
 public:
 book()
 {
-title=new char[50];
-auth=new char[50];
-pub=new char[50];
+title=new char[51];
+auth=new char[51];
+pub=new char[51];
 price=0;
 stock=0;
 }
@@ -24,11 +24,11 @@ stock=0;
 void insert()
 {
 cout<<"Enter the title of the book\t";
-cin>>title;
+cin.getline(title,50);
 cout<<"Enter the author of the book\t";
-cin>>auth;
+cin.getline(auth,50);
 cout<<"Enter the publisher name\t";
-cin>>pub;
+cin.getline(pub,50);
 cout<<"Enter the price of the book\t";
 cin>>price;
 cout<<"Enter the no of stock\t";
@@ -37,7 +37,7 @@ cin>>stock;
 
 int search(char *t,char *a)
 {
-if((strcmp(title,t))==(strcmp(auth,a)))
+if(strcmp(title,t)==0 && strcmp(auth,a)==0) //previous one would return 1 as long as the results of both comparisons are equal, irrespective of whether they are 0 or not
 return 1;
 else
 return 0;
