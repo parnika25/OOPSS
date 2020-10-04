@@ -7,11 +7,15 @@ string name;
 int roll;
 int age;
 public:
-void getdata(string n,int r,int a)
+void getdata()
 {
-name=n;
-roll=r;
-age=a;
+cout<<"Enter the name of the student\t";
+getline(cin,name);
+cout<<"Enter the roll no of the student\t";
+cin>>roll;
+cout<<"Enter the age of the student\t";
+cin>>age;
+cin.ignore();
 }
 void display()
 {
@@ -74,17 +78,8 @@ cout<<"Fail\n";
 
 int main()
 {
-string n,c;
-int a,r;
 result t;
-cout<<"Enter the name of the student\t";
-getline(cin,n);
-cout<<"Enter the roll no of the student\t";
-cin>>r;
-cout<<"Enter the age of the student\t";
-cin>>a;
-cin.ignore();
-t.student::getdata(n,r,a);
+t.student::getdata();
 t.test::getdata();
 t.total1();
 t.display();
