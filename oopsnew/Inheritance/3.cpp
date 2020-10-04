@@ -8,11 +8,15 @@ int roll;
 int age;
 
 public:
-void getdata(string n,int r,int a)
+void getdata()
 {
-name=n;
-roll=r;
-age=a;
+cout<<"Enter the name of the student\t";
+getline(cin,name);
+cout<<"Enter the roll no of the student\t";
+cin>>roll;
+cout<<"Enter the age of the student\t";
+cin>>age;
+cin.ignore();
 
 }
 void display()
@@ -96,27 +100,12 @@ cout<<"Fail\n";
 int main()
 {
 result obj1;
-string n,c;
-int a,r,m1,m2,m3,a1,a2;
-result t;
-cout<<"Enter the name of the student\t";
-getline(cin,n);
-cout<<"Enter the roll no of the student\t";
-cin>>r;
-cout<<"Enter the age of the student\t";
-cin>>a;
-cin.ignore();
-cout<<"Enter the marks for Test 1\t";
-cin>>m1;
-cout<<"Enter the marks for Test 2\t";
-cin>>m2;
-cout<<"Enter the marks for Test 3\t";
-cin>>m3;
-cout<<"Enter the marks for Activity 1\t";
-cin>>a1;
-cout<<"Enter the marks for Activity 2\t";
-cin>>a2;
-obj1.student::getdata(n,r,a);
+int m1,m2,m3,a1,a2;
+cout<<"Enter the marks for Test 1, Test2 and Test 3\n";
+cin>>m1>>m2>>m3;
+cout<<"Enter the marks for Activity 1 and Activity 2\n";
+cin>>a1>>a2;
+obj1.student::getdata();
 obj1.test::getdata(m1,m2,m3);
 obj1.activity::getdata(a1,a2);
 obj1.total();
