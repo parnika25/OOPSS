@@ -8,16 +8,11 @@ int roll;
 int age;
 
 public:
-void getdata()
+void getdata(string n, int rl, int ag)
 {
-cout<<"Enter the name of the student\t";
-getline(cin,name);
-cout<<"Enter the roll no of the student\t";
-cin>>roll;
-cout<<"Enter the age of the student\t";
-cin>>age;
-cin.ignore();
-
+name=n;
+roll=rl;
+age=ag;
 }
 void display()
 {
@@ -100,12 +95,20 @@ cout<<"Fail\n";
 int main()
 {
 result obj1;
-int m1,m2,m3,a1,a2;
+string n;
+int m1,m2,m3,a1,a2,ag,rl;
+cout<<"Enter the name of the student\t";
+getline(cin,n);
+cout<<"Enter the roll no of the student\t";
+cin>>rl;
+cout<<"Enter the age of the student\t";
+cin>>ag;
+cin.ignore();
 cout<<"Enter the marks for Test 1, Test2 and Test 3\n";
 cin>>m1>>m2>>m3;
 cout<<"Enter the marks for Activity 1 and Activity 2\n";
 cin>>a1>>a2;
-obj1.student::getdata();
+obj1.student::getdata(n,rl,ag);
 obj1.test::getdata(m1,m2,m3);
 obj1.activity::getdata(a1,a2);
 obj1.total();
